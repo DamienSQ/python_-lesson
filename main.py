@@ -1,9 +1,14 @@
-age = int(input("Введите ваш возраст: "))
-citizen_country = input("Вы являетесь гражданином страны? да/нет ")
-disqualified = input("Есть ли у вас судимости? да/нет ")
+user_input = int(input("Введите число от 1 до 5: "))
 
-if age >= 18 and citizen_country.lower() == "да" and disqualified.lower() == "нет":
-    print("Вы можете голосовать на выборах")
+if user_input == 1:
+    print("One")
+elif user_input == 2:
+    print("Two")
+elif user_input == 3:
+    print("Three")
+elif user_input == 4:
+    print("Four")
+elif user_input == 5:
+    print("Five")
 else:
-    print("Вы не можете голосовать на выборах")
-
+    print("Вы ввели неверное число")
