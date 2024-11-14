@@ -1,5 +1,8 @@
-user_number = int(input("Введите число: "))
+user_number = int(input("Введите целое положительное число: "))
 
-while user_number >= 0:
-    print(user_number)
-    user_number -= 1
+if user_number > 0:
+    while user_number >= 0:
+        print(user_number)
+        user_number -= 1
+
+
