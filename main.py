@@ -1,9 +1,9 @@
-user_number = int(input("Введите целое положительное число: "))
+password = "password"
 
-if user_number > 0:
-    while user_number >= 0:
-        print(user_number)
-        user_number -= 1
-else:
-    print("Число не верно, введите положительное число")
-
+while True:
+    user_input = input("Введите пароль: ")
+    if user_input == password:
+        print("Доброе пожаловать")
+        break
+    else:
+        print("Пароль не верный, попробуйте снова")
